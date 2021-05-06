@@ -6,79 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- He probado Boostrap 4 y 5 pero me convence mas el 3 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- Animate css para animaciones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <style>
-    p
-    {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-
-    .navbar
-    {
-      margin-bottom: 0;
-      border-radius: 10;
-      background-color: #141E40;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-  /* Columns to make more stable */
-    .column
-    {
-      float: left;
-      width: 33.33%;
-      padding: 10px;
-      height: 300px; 
-    }
-
-    hr
-    {
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: rgb(255, 115, 0);
-    border-right-color: rgb(255, 115, 0);
-    border-bottom-color: rgb(255, 115, 0);
-    border-left-color: rgb(255, 115, 0);
-    background-color: rgb(255, 115, 0);
-    height: 10px;
-    }
-
-    hr.side
-    {
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: #141E40;
-    border-right-color: #141E40;
-    border-bottom-color: #141E40;
-    border-left-color: #141E40;
-    background-color: #141E40;
-    height: 10px;
-    }
-
-    footer
-    {
-      background-color: #141E40;
-      padding: 30px;
-    }
-
-    .carousel-inner img
-    {
-      width: 100%;
-      margin: auto;
-      min-height:50px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="custom.css">
 </head>
   <body>
-
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -183,7 +115,7 @@
         <div class="container text-center">
           <div class="column animate__animated animate__backInUp animate__delay-4s">
             <h2>Misión<hr class="side" size=15></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  run run sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  run run ex ea commodo consequat.</p>
           </div>
           <div class="column animate__animated animate__backInUp animate__delay-4s" >
             <h2> </h2>
@@ -192,18 +124,22 @@
           </div>
           <div class="column animate__animated animate__backInUp animate__delay-4s" >
             <h2>Visión<hr class="side"  size=15></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur run run adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur run run adipiscing elit, ex ea commodo consequat.</p>
           </div>
         </div>
       </div>
-    </div><br><br>
+    </div>
+    
+    <br><br>
 
     <footer class="container-fluid text-center">
-      <li><font color="#FFFFFF">Información</font></li>
-      <li><span class="font-gothic-light"><font color="#FFFFFF">2019  Ⓒ Autos Ozzie´s Todos los derechos reservados.</font></span><font color="#FFFFFF">Términos y condiciones</font><strong></li></strong></li>
+      <li class="footer__info"><font color="#FFFFFF">Información</font></li>
+      <li class="footer__info"><span class="font-gothic-light">
+        <font color="#FFFFFF">2021  Ⓒ Autos Ozzie´s Todos los derechos reservados.</font>
+        </span><font color="#FFFFFF">Términos y condiciones</font><strong></li></strong>
+      </li>
     </footer>
 
-    <script type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>

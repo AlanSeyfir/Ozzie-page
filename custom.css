@@ -1,21 +1,86 @@
-body, .form-control {
-    font-family: 'Lato', sans-serif;
+body,
+.form-control {
+  font-family: "Lato", sans-serif;
 }
-h1{
-    margin-bottom: 40px;
+h1 {
+  margin-bottom: 40px;
 }
 label {
-    color: #333;
+  color: #333;
 }
 .btn-send {
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 10;
+  background-color: #141e40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Columns to make more stable */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+hr {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(255, 115, 0);
+  border-right-color: rgb(255, 115, 0);
+  border-bottom-color: rgb(255, 115, 0);
+  border-left-color: rgb(255, 115, 0);
+  background-color: rgb(255, 115, 0);
+  height: 10px;
+}
+
+hr.side {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #141e40;
+  border-right-color: #141e40;
+  border-bottom-color: #141e40;
+  border-left-color: #141e40;
+  background-color: #141e40;
+  height: 10px;
+}
+
+footer {
+  background-color: #141e40;
+  padding: 30px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  margin: auto;
+  min-height: 50px;
 }
 
 
-.help-block.with-errors {
-    color: #ff5050;
-    margin-top: 5px;
+.footer__info{
+    list-style: none;
 }
