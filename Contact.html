@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Contact Form </title>
@@ -12,11 +11,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/contact.css">
     </head>
+
     <body>
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
@@ -25,7 +25,6 @@
             </button>
             <a href="Ozzie.html"><img src="https://imgur.com/za5lSBX.png" title="source: imgur.com" width="140" height="55" /></a>
           </div>
-          
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <!--<li class="active"><a href="#"></a></li> Por si es necesario o  si algun error sucede-->
@@ -33,36 +32,127 @@
               <span class="glyphicon glyphicon-home"></span> Home </button></a></li>
               <li><a href="Contact.html">Contacto</a></li>
             </ul>
-            
             <ul class="nav navbar-nav navbar-left">
               <li><a href="#"></a></li>
             </ul>
-
             <ul class="nav navbar-nav navbar-right">
               <li><a href="Login Page.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
             </ul>
-
           </div>
-
         </div>
       </nav>
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2"><br>
-            <div>
-                <span style="font-size:x-large;"><span style="font-size:x-large;"><img src="https://imgur.com/bW1XF6J" alt="">
-                  <img style="float:right;" title="OZ.png" src="https://s3-us-west-2.amazonaws.com/userdata123/www/htmlblocks-images/2144/2144103/2144103_4794043_5cce6b7c33a1c.png" alt="" width="233" height="70">Formulario de Contacto<br></span>
+            <div class="col-lg-8 col-lg-offset-2">
+              <div>
+                <span style="font-size:x-large;">
+                  <span style="font-size:x-large;">
+                    <img src="https://imgur.com/bW1XF6J" alt="">
+                    <img style="float:right;" title="OZ.png" src="https://s3-us-west-2.amazonaws.com/userdata123/www/htmlblocks-images/2144/2144103/2144103_4794043_5cce6b7c33a1c.png" alt="" width="233" height="70">Formulario de Contacto<br>
+                  </span>
                 </span>
-                <span style="font-size:x-large;">Déjenos saber sus preguntas, sugerencias o preocupaciones llenando el formulario de contacto debajo.</span>
+                <p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;direction:ltr;unicode-bidi:embed;word-break:normal;">
+                  <span style="font-size:14pt;">
+                    <em>
+                      <span style="font-family:Calibri;color:black;">"Lo que </span>
+                      <span style="font-family:Calibri;color:black;">necesitas</span>
+                      <span style="font-family:Calibri;color:black;">, para </span>
+                      <span style="font-family:Calibri;color:black;">completar</span>
+                      <span style="font-family:Calibri;color:black;">tu</span> 
+                      <span style="font-family:Calibri;color:black;">colección"</span>
+                    </em>
+                  </span>
+                </p>
+                <p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;direction:ltr;unicode-bidi:embed;word-break:normal;">
+                  &nbsp;
+                </p>
+                <span style="font-size:x-large;">
+                  <span style="font-size:small;">
+                    Déjenos saber sus preguntas, sugerencias o preocupaciones llenando el formulario de contacto debajo.&nbsp;
+                  </span>
+                  <br>
+                </span>
+              </div>
+                <hr size="10" />
+                <form id="contact-form" method="post" action="Ozzie.html" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Nombre *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Neftali *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Apellido *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Garza *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Correo Electrónico *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="micorreo@gmail.com *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                    <div data-role="container" data-type="virtual-form-table-row" data-hash="0000000d" data-type-id="0" data-colspan="20" data-num-children="1"><div data-role="control" data-type="drop-down" data-hash="0000000e" data-type-id="4" data-colspan="20" data-label-is-bold="1" data-is-required="1" data-renderer-type="tln" data-id="53211861" data-is-active="1" data-is-selected="1"><label data-role="label" id="dropdown-0000000e-acc" data-i18n-text="control_label_53211861">¿Cómo podemos ayudarte?</label><dt data-role="instructions" id="dropdown-0000000e-instr-acc" data-is-empty="1" data-i18n-text="control_instructions_53211861"></dt><div data-role="input-row" data-is-first-row="1" data-is-last-row="1" data-fill-colspan="0"><div data-ui-role="ui-element" data-type="dropdown" data-role="i123-input" aria-labelledby="dropdown-0000000e-acc dropdown-0000000e-error-acc dropdown-0000000e-instr-acc" data-size="full"><select><option value="Asistencia y quejas" data-index="0">Asistencia y quejas</option><option value="Promociones" data-index="1">Promociones</option><option value="Otros" data-index="2">Otros</option></select><div data-role="dropdown-skin"></div></div></div><label data-role="error" id="dropdown-0000000e-error-acc" data-is-empty="1"></label></div></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Teléfono</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="81-9723-1947">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Dejanos tu mensaje *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <form action="procesar_datos.php" method="post">
+                                  <label for="condiciones">He leido los  
+                                    <a href="#">terminos y Condiciones</a> 
+                                  </label>
+                                  <input type="checkbox" name="condiciones" />
+                                </form>
+                            </div>
+                            <div class="col-md-12">
+                              <!-- Activar el mensaje -->
+                              <input type="submit" class="btn btn-success btn-send" value="Enviar Mensaje" a href="#myModal" class="trigger-btn" data-toggle="modal">
+                                <div id="myModal" class="modal fade">
+                                  <div class="modal-dialog modal-confirm">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <div class="icon-box">
+                                          <i class="material-icons">&#xE5CD;</i>
+                                        </div>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                      </div>
+                                      <div class="modal-body text-center">
+                                        <h4>Oh no!</h4>
+                                        <p>Por favor verifica tu información.</p>
+                                        <button class="btn btn-success" data-dismiss="modal"><span><a href="Ozzie.html">Porfavor, rellene todos los espacios.</span> <i class="material-icons">&#xE5C8;</i></button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </div>
         </div>
-      </div> 
-
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
 </html>
